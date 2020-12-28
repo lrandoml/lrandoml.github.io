@@ -4,13 +4,13 @@
 	<title>Maya</title>
 	<link rel="stylesheet" href="main.css">
 
-	<script>
+	<script type="text/javascript">
 	function json(url) {
   return fetch(url).then(res => res.json());
 }
 
 let apiKey = 'your_api_key';
-  json(`https://api.ipdata.co?api-key=${149a61c3f751774e2562dcdb600dfab60968fae0c20050e6855b6694}&fields=ip`).then(data => {
+  json(`https://api.ipdata.co?api-key=${149a61c3f751774e2562dcdb600dfab60968fae0c20050e6855b6694}`).then(data => {
 
   console.log(data.ip);
   console.log(data.city);
